@@ -73,7 +73,13 @@
         <access origin="*" /> - a wildcard access tag allows access to all external resource.
     -->
 
-    <access origin="*"/>
+    <access origin="*" />
+   <allow-intent href="http://*/*" />
+   <allow-intent href="https://*/*" />
+   <allow-intent href="tel:*" />
+   <allow-intent href="sms:*" />
+   <allow-intent href="mailto:*" />
+   <allow-intent href="geo:*" />
 
 
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
